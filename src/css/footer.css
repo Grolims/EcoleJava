@@ -1,0 +1,17 @@
+#wrapper > footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: var(--font-size-l);
+  border-top: solid var(--border-color) 1px;
+  background-color: rgb(88, 39, 39);
+}
+
+.fotdiv >  span, a{
+
+  background-color: rgb(88, 39, 39);
+  color:white;
+}
+
+.fotdiv{
+  background-color: rgb(88, 39, 39);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>WebMobUi</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      ui-button {
+        margin: 1rem;
+        width: 1rem;
+        height: 1rem;
+        display: block;
+        cursor: pointer;
+      }
+      ui-button:before {
+        content: attr(data-before);
+      }
+      ui-button[data-action="delete"] {
+        color: red;
+      }
+      ui-button.add {
+        color: blue;
+      }
+    </style>
+
+  </head>
+  <body>
+    Hello World HTML
+
+    <!-- Microdata: for search engine and data mining -->
+    <!--article itemscope itemtype="https://schema.org/CreativeWork">
+      Car
+    </article-->
+
+    <!--
+      <div class="ui-button ui-button-delete">
+        delete
+      </div>
+    -->
+
+    <!-- custom element: add personal semantic to your own app-->
+    <ui-button class="add" data-before="test">add</ui-button>
+
+    <!-- data-attributs : add you own internal data to a DOM element -->
+    <ui-button data-action="delete" data-before="test2" data-id="1">delete</ui-button>
+
+    <!--button>
+      <button-delete>
+        delete
+      </button-delete>
+    </button-->
+
+    <!--script src="bundle.js"></script-->
+    <script>
+      // Example of data- attribut usage
+      let btn = document.querySelector('ui-button[data-action="delete"]');
+      btn.addEventListener("click", evt => {
+        //let data = evt.currentTarget.dataset.action;
+        let id = evt.currentTarget.getAttribute("data-id");
+        console.log(id);
+      })
+
+      // $("ui-button.delete").on("click", evt => {
+      //   let action = $(evt.currentTarget).data("action")
+      //   console.log(action);
+      // }
+    </script>
+  </body>
+</html>

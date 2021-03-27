@@ -1,0 +1,44 @@
+:root {
+  font-size: 1.1rem;
+}
+html, body {height: 100%}
+.hidden {
+  display: none;
+}
+.show {
+  display: initial !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  background-color: var(--main-bg-color);
+  color:  var(--main-fg-color);
+}
+
+.icon-airplane {
+  color:#00c9a7;
+  
+}
+
+a:hover {
+  color:rgb(123, 211, 233);
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-connection {
+  width: 1.25em;
+}
+
+filters{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

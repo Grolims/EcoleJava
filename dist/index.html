@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>webmobile</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="wrapper" data-media="desktop">
+      <header>
+        <h1>webmobile</h1>
+      <element id="airplane" class="icon-airplane" > </element>
+      </header>
+      <nav>
+        <ui-button></ui-button>
+        <ul>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#todo">Todo</a></li>
+          <li><a href="#bookmarks">Bookmarks</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section class="page" id="schedule">
+          <p>Schedule</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+          </p>
+        </section>
+        <section class="page" id="todo">
+          <form action="" id ="form1" method="post">
+            <label>task</label>
+          <input type="text" id= "taskform" name="task">
+          <p></p>
+          <label> date </label>
+          <input type="date" id="date" name="date">
+          <div class="button-todo">
+            <button id="sub" type="submit">Ajouter à la todolist</button>
+        </div>
+    
+          </form>
+          <filters>
+            <button data-filter="past"> historique </button>
+            <button data-filter="futur"> todo </button>
+          </filters>
+          <todo-list id="todo-list-test">
+
+          </todo-list>
+        </section>
+        <section class="page" id="bookmarks">
+          <p>Bookmark</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+          </p>
+        </section>
+      </main>
+      <footer>
+        <div class ="fotdiv" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Martin Mertenat</span>
+          <a itemprop="url" href="mailto: martin.mertenatd@heig-vd.ch">martin.mertenat@heig-vd.ch</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
