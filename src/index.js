@@ -11,6 +11,7 @@ import JsonStorage from 'lib/JsonStorage';
 
 import tmpTask from 'templates/task.hbs';
 import tmphello from 'templates/hello.hbs';
+//import Bookmark from "model/bookmark";
 
 navigator.serviceWorker.register('sw.js');
 
@@ -42,8 +43,10 @@ document.querySelector("#wrapper nav").addEventListener("click", evt => {
   if (!window.matchMedia("screen and (max-width: 32rem), screen and (max-device-width: 32rem)").matches) return;
 
   let menu = document.querySelector("#wrapper nav ul");
+  console.log("test");
   //$("#wrapper nav ul").toggle();
-  menu.classList.toggle('show');
+  menu.toggleAttribute('show');
+  // correct menu.classList.toggle('show');
 });
 
 /*
@@ -167,15 +170,7 @@ for (let [key, task] of sortedTask) {
   dom.insertAdjacentHTML('beforeend', tmpTask({...task, key}));
 }
 
-tabTask.forEach(index => {
-  tabTask.forEach(key => {
-    
-    //console.log(key);
-    
-  });
 
-  
-});
 };
 
 

@@ -2,7 +2,7 @@
   "name": "webmobui",
   "version": "1.0.0",
   "description": "WebMobUI IM",
-  "main": "index.js",
+  "main": "index_exa1.js",
   "scripts": {
     "preview": "live-server dist/",
     "build": "webpack",

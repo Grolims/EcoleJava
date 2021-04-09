@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
-  entry: ['babel-polyfill', './src/index.js'],
+  entry: ['babel-polyfill', './src/index_exa1.js'],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
