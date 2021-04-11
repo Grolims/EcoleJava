@@ -164,6 +164,7 @@ let filter = filterStorage.getItem("filter");
 
  }
 
+ /// ... tableau et pas copie
 for (let [key, task] of sortedTask) {
   //console.log(key);
   //console.log(task);

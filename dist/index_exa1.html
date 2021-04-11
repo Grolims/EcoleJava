@@ -7,21 +7,29 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#FF6347">  
+  <link rel="manifest" href="manifest.webmanifest">
+  
   <style>
     /*VOTRE PARTIE CSS DE l'EXAMEN DOIT SE TROUVER CI-DESSOUS */
-            .show {
+         
+    .show {
         display: initial !important;
         }
+        
           @media screen and (max-device-width: 30rem),
           screen and (max-width: 30rem) {
 
-        .loan-btn-add-person{
-          display: none;
-      }
-        #wrapper>main{
-            background-color: red;
-            display: grid;
-            grid-template-areas: "persons loans"
+                  .loan-btn-add-person{
+                    display: none;
+                }
+      
+            #wrapper>footer {
+          background-color: red;
+          color: black;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.5rem 1rem;
         }
     }
     
@@ -65,7 +73,7 @@
 
     body {
       font-family: sans-serif;
-      background-color: var(--bg-color);
+      background-color:
     }
 
     #persons.page.hidden{
@@ -393,11 +401,24 @@
     @media screen and (max-device-width: 30rem),
     screen and (max-width: 30rem) {
 
-
         #wrapper>nav ul {
         display: none;
       }
 
+      #persons {grid-area: persons}
+      #loans {grid-area: loans}
+
+     #wrapper > main {
+        display: grid;
+        min-height: 100%;
+    }
+
+    #wrapper > main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "persons loans"
+    }
      
       #wrapper>nav li {
         display: block;
@@ -445,7 +466,6 @@
     </nav>
     <main>
       <section class="page" id="persons">
-        <p>Page Personnes </p>
         <form id="person-form-add">
           <label id="person-input-name-label">Ajouter une personne</label>
           <input required type="text" placeholder="Nom" id="person-input-name">

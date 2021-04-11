@@ -20,5 +20,5 @@ self.addEventListener('fetch',event => {
 
 self.addEventListener('activate',event => {
 
-    console.log("work");
+    console.log("Service worker fonctionne");
 });

@@ -27,7 +27,7 @@ const changePage = (event) => {
 //HTML api History
 window.addEventListener("popstate", changePage);
 //$(window).trigger("popstate");
-changePage();
+changePage();  
 
 
 // gestion menu mobile
@@ -143,7 +143,7 @@ document.getElementById("addpret")
           {
             return;
           }
-    
+          //mettre variable
           console.log(event.target.dataset.key);
           taskStorage.removeItem(event.target.dataset.key);
           event.preventDefault();
